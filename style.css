@@ -1,0 +1,27 @@
+h1 {
+    color: blue;
+}
+
+.paragrafo {
+    color:orange;
+    background-color: black;
+}
+
+#p1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: yellow;
+}
+
+span {
+    display: none;
+}
+
+.p3 {
+    background-color: gray;
+}
+
+h5 {
+    font-size: 50px;
+    color: purple;
+}
