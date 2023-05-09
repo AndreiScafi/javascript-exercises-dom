@@ -3,13 +3,14 @@ h1 {
 }
 
 .paragrafo {
-    color:orange;
+    color: orange;
     background-color: black;
+    font-size: 25px;
 }
 
 #p1 {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
     color: yellow;
 }
 

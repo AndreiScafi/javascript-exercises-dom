@@ -72,5 +72,32 @@ Em resumo, o DOM é uma representação hierárquica dos elementos de um documen
 
 document.body.innerHTML = '<h1>Esse título foi inserido com Javascript.</h1>' + document.body.innerHTML // O objeto document contém todo o HTML, porém especificamos o body, e com o método innerHTML, que recebe uma string, adicionamos a TAG <h1> com o título descrito, depois é preciso concatenar com o mesmo método para não perder o conteúdo que já havia dentro do body.
 
-document.body.innerHTML += '<h2>Esse segudno título também foi inserido com Javascript' // A concatenação += é necessária para manter o conteúdo antigo, ao adicionar o novo conteúdo. 
+document.body.innerHTML += '<h2>Esse segundo título também foi inserido com Javascript' // A concatenação += é necessária para manter o conteúdo antigo, ao adicionar o novo conteúdo. 
 
+// Exercícios práticos.
+
+//Selecionando elementos pela ID:
+
+let p1 = document.getElementById('p1');
+
+console.log(p1);// Irá retornar o elemento Paragrafo 1;
+
+//Selecionando elementos pela className.
+
+let paragrafos = document.getElementsByClassName('paragrafo');
+
+console.log(paragrafos);//Irá retornar uma array com todos os elementos que contém a classe paragrafo. 
+
+for (let p of paragrafos) {
+    console.log(p);
+}// Irá retornar em um laço de repetição todos os elementos do array paragrafos.
+
+//Selecionando elementos pela TagName.
+
+let tp = document.getElementsByTagName('p');
+
+console.log(tp)// Irá retornar uma array com todos os elementos que contém a tag p.
+
+for (let p of tp) {
+    console.log(p);
+}//Irá retornar todos os elementos com a Tag p, em um laço de repetição.
