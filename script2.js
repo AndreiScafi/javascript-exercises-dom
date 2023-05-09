@@ -45,3 +45,32 @@ Em resumo, o objeto "document" é fundamental para a interação com o conteúdo
 */
 
 console.log(document) // contém todo o HTML
+
+//DOM - Document Object Model
+
+//Conceito:
+
+/* 
+DOM (Document Object Model) é uma interface de programação para documentos HTML e XML. Em JavaScript, o DOM é uma representação hierárquica do conteúdo de um documento, onde cada elemento na página é representado por um objeto no modelo de objeto do documento.
+
+O DOM é uma estrutura de árvore que representa a estrutura do documento HTML/XML. Cada elemento HTML é representado por um objeto no DOM, que pode ser acessado e manipulado usando JavaScript.
+
+O DOM permite que os desenvolvedores acessem e manipulem elementos da página dinamicamente, adicionando, removendo e alterando elementos HTML e seus atributos em tempo de execução. Além disso, o DOM também permite que os desenvolvedores adicionem e removam eventos para interagir com o usuário, como cliques do mouse, teclas pressionadas, entre outros.
+
+Algumas das tarefas que podem ser realizadas com o DOM em JavaScript incluem:
+
+Acesso aos elementos HTML e seus atributos
+Manipulação do conteúdo HTML dinamicamente
+Adição e remoção de elementos HTML
+Manipulação de estilos CSS
+Adição e remoção de eventos do usuário
+Manipulação de formulários HTML
+Em resumo, o DOM é uma representação hierárquica dos elementos de um documento HTML ou XML que permite que os desenvolvedores acessem e manipulem dinamicamente o conteúdo e a interação do usuário com a página usando JavaScript.
+ */
+
+// Aplicação prática:
+
+document.body.innerHTML = '<h1>Esse título foi inserido com Javascript.</h1>' + document.body.innerHTML // O objeto document contém todo o HTML, porém especificamos o body, e com o método innerHTML, que recebe uma string, adicionamos a TAG <h1> com o título descrito, depois é preciso concatenar com o mesmo método para não perder o conteúdo que já havia dentro do body.
+
+document.body.innerHTML += '<h2>Esse segudno título também foi inserido com Javascript' // A concatenação += é necessária para manter o conteúdo antigo, ao adicionar o novo conteúdo. 
+
