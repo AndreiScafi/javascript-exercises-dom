@@ -138,4 +138,7 @@ console.log(p4.innerText);//Como o span foi marcado como display: none, ele não
 
 console.log(p4.textContent)// Irá imprimir no console o conteúdo do span, mesmo ele não aparecendo na tela. 
 
+// Modificando atributos dos elementos:
+p1.style.backgroundColor = "purple";// O backgroundColor de p1 foi alterado para roxo. 
+
 
