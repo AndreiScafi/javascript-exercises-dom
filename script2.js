@@ -101,3 +101,41 @@ console.log(tp)// Irá retornar uma array com todos os elementos que contém a t
 for (let p of tp) {
     console.log(p);
 }//Irá retornar todos os elementos com a Tag p, em um laço de repetição.
+
+// Modificando elementos
+
+/* Existem três formas principais de alterar conteúdo de lementos do HTML por meio do javascript */
+
+//innerHTML:
+p1.innerHTML = "Novo conteúdo por innerHTML."// Irá alterar o conteúdo da variável p1, alterando o conteúdo do parágrafo 1.
+
+
+//innerText
+p1.innerText = "Novo conteúdo por innerText."// Irá alterar o conteúdo da variável p1, alterando o conteúdo do parágrafo 1.
+
+
+//textContent
+p1.textContent = "Novo conteúdo por textContent."// Irá alterar o conteúdo da variável p1, alterando o conteúdo do parágrafo 1.
+
+//Diferenças entre as formas de alteração.
+
+//O innerHTML reconhece tags html.
+p1.innerHTML = "<h2> O innerHTML reconhece tags html, portanto agora tem uma tag h2 dentro da tag p. </h2>";
+
+// Tanto o innerText e o textContent não reconhecem tags html.
+
+p1.innerText = "<h2> O inneText não reconhece tags html, portanto agora não tem uma tag h2 dentro da tag p. </h2>"
+
+// o mesmo ocorre para o textContent:
+p1.textContent = "<h2> O textContent não reconhece tags html, portanto agora não tem uma tag h2 dentro da tag p. </h2>"
+
+// Jà a diferença entre o innerText e o textContent:
+
+//O innerText mostra apenas o que foi exibido na tela. 
+let p4 = document.getElementById('p4');
+
+console.log(p4.innerText);//Como o span foi marcado como display: none, ele não aparece na tela e também não é mostrado no innerText.
+
+console.log(p4.textContent)// Irá imprimir no console o conteúdo do span, mesmo ele não aparecendo na tela. 
+
+
