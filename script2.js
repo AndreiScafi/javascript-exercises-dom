@@ -141,4 +141,17 @@ console.log(p4.textContent)// Irá imprimir no console o conteúdo do span, mesm
 // Modificando atributos dos elementos:
 p1.style.backgroundColor = "purple";// O backgroundColor de p1 foi alterado para roxo. 
 
+//Eventos no DOM:
 
+//Alterando a cor de fundo do elemento utilizando evento no javascript. 
+
+p1.addEventListener("mouseover", backgroundColorRed);
+p1.addEventListener("mouseout", backgroundColorPurple);
+
+function backgroundColorRed() {
+    this.style.backgroundColor = 'red';
+}
+
+function backgroundColorPurple() {
+    this.style.backgroundColor = 'purple';
+}
