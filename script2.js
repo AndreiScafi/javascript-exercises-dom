@@ -145,8 +145,8 @@ p1.style.backgroundColor = "purple";// O backgroundColor de p1 foi alterado para
 
 //Alterando a cor de fundo do elemento utilizando evento no javascript. 
 
-p1.addEventListener("mouseover", backgroundColorRed);
-p1.addEventListener("mouseout", backgroundColorPurple);
+p1.addEventListener("mouseover", backgroundColorRed);// Ao passar o mouse por cima do elemento, será executada a função para mudar a cor de fundo do prórpio elemento. 
+p1.addEventListener("mouseout", backgroundColorPurple);// Ao retirar o mouse de cima do elemento será chamada a função para retornar a cor original do elmento. 
 
 function backgroundColorRed() {
     this.style.backgroundColor = 'red';
@@ -154,4 +154,12 @@ function backgroundColorRed() {
 
 function backgroundColorPurple() {
     this.style.backgroundColor = 'purple';
+}
+
+// Utilizando o 'this' para alterar o conteúdo do elemento. 
+
+p1.addEventListener("click", colocarEmMaiusculo);// Ao clicar no elemento a função será iniciada colocando todo o conteúdo em letras maiúsculas. 
+
+function colocarEmMaiusculo() {
+    this.innerHTML = this.innerHTML.toUpperCase();
 }
